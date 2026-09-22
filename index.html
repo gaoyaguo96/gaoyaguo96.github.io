@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Hane Chrome Extension</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --container-bg: #ffffff;
+            --text-color: #212529;
+            --text-muted: #6c757d;
+            --border-color: #dee2e6;
+            --accent-color: #0d6efd;
+            --code-bg: #f1f3f5;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --container-bg: #1e1e1e;
+                --text-color: #e0e0e0;
+                --text-muted: #a0a0a0;
+                --border-color: #333333;
+                --accent-color: #3f8cf3;
+                --code-bg: #2d2d2d;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .effective-date {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        p, li {
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+            background-color: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Privacy Policy for Hane</h1>
+        <div class="effective-date">Effective date: September 23, 2026</div>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Data collection</h2>
+            <p>Hane does not collect, store on remote servers, sell, or share any personal data. There are no analytics, tracking scripts, or telemetry of any kind in this extension.</p>
+        </section>
+
+        <section>
+            <h2>2. Local processing only</h2>
+            <ul>
+                <li>Download history and in-app settings are stored exclusively in your browser's local extension storage (<code>chrome.storage</code>) and never leave your device. You can clear them at any time by removing the extension.</li>
+                <li>Video/audio files, subtitles, and speech-to-text results are saved only to your own device's Downloads folder, at your explicit request.</li>
+                <li>Speech transcription runs 100% locally in your browser using an open-source Whisper model (ONNX Runtime Web, WebAssembly). Audio is never uploaded to any server.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Network requests</h2>
+            <p>Hane makes network requests solely to the services you use it with:</p>
+            <ul>
+                <li><code>bilibili.com</code> / <code>douyin.com</code> and their media CDN hosts, to resolve and download the video/subtitle you explicitly requested;</li>
+                <li><code>huggingface.co</code> / <code>hf-mirror.com</code>, to download the open-source Whisper model weights (one-time; cached locally afterwards).</li>
+            </ul>
+            <p>No other destinations are contacted. Standard request metadata (IP address, User-Agent) is visible to those third-party sites under their own privacy policies; Hane does not attach any user identifiers.</p>
+        </section>
+        <section>
+            <h2>4. Child-directed content</h2>
+            <p>This extension is not directed at children.</p>
+        </section>
+
+        <section>
+            <h2>5. Contact & Open Source</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us via email:</p>
+            <p><strong>Questions:</strong> <a href="mailto:41701scxzq@gmail.com">41701scxzq@gmail.com</a></p>
+            <p>You can also review the complete extension source code transparency report or submit issues on GitHub:</p>
+            <p><strong>Source Code:</strong> <a href="https://github.com" target="_blank" rel="noopener noreferrer">://github.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hane Extension. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
